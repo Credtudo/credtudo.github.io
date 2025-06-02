@@ -656,3 +656,10 @@ footer {
         justify-content: center;
     }
 }
+
+
+/* Correção para opções do dropdown ficarem visíveis */
+.form-group select option {
+    color: var(--dark-color); /* Cor de texto escura para contraste */
+    background-color: var(--light-color); /* Fundo claro */
+}
