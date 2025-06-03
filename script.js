@@ -1,7 +1,7 @@
 // Script para manipulação do formulário e botões de WhatsApp
 document.addEventListener('DOMContentLoaded', function() {
     // Configuração do número de WhatsApp (substitua pelo seu número)
-    const whatsappNumber = "5500000000000"; // Formato: código do país + DDD + número
+    const whatsappNumber = "5513981354499"; // Formato: código do país + DDD + número
     const whatsappMessage = "Olá! Gostaria de mais informações sobre crédito consignado.";
     
     // Função para formatar valores monetários
