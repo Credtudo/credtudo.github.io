@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Configurar botões de WhatsApp
     const whatsappButton = document.getElementById('whatsapp-button');
     const floatingWhatsappButton = document.getElementById('floating-whatsapp-button');
+    const headerWhatsappButton = document.getElementById('header-whatsapp-button');
     
     if (whatsappButton) {
         whatsappButton.addEventListener('click', function(e) {
@@ -89,6 +90,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (floatingWhatsappButton) {
         floatingWhatsappButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+        });
+    }
+    
+    if (headerWhatsappButton) {
+        headerWhatsappButton.addEventListener('click', function(e) {
             e.preventDefault();
             window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
         });
